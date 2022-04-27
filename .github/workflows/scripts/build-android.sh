@@ -74,15 +74,15 @@ echo "Removing Old Builds.."
 rm -rf build
 
 echo "Running flutter clean.."
-sudo /home/cirrus/sdks/flutter/bin/flutter clean
+flutter clean
 
 echo "Running flutter pub get ..."
-sudo /home/cirrus/sdks/flutter/bin/flutter pub get
+flutter pub get
 
 echo "Generating Launcher Icons ..."
 #flutter pub run flutter_launcher_icons:main -f flutter_launcher_icons.yaml
 
 echo "Building $BUILD_TYPE $BUILDOUTPUT for Flowbird $FLAVOR ..."
 #flutter build "$BUILDOUTPUT" --"$BUILD_TYPE" --flavor "$FLAVOR" -t "$MAIN_FILE" --build-name="$VERSIONNUMBER" --build-number="$BUILDNUMBER" --no-obfuscate $FLUTTER_ADDITIONAL_FLAGS
-sudo /home/cirrus/sdks/flutter/bin/flutter build "$BUILDOUTPUT" --"$BUILD_TYPE" --build-name="$VERSIONNUMBER" --build-number="$BUILDNUMBER" --split-per-abi
+flutter build "$BUILDOUTPUT" --"$BUILD_TYPE" --build-name="$VERSIONNUMBER" --build-number="$BUILDNUMBER" --split-per-abi
 
