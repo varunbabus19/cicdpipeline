@@ -2,7 +2,7 @@
 # Functions
 printHelp() {
     echo "\t"
-    echo "\tUse: ./build-ios.sh -t <BUILD_TYPE> -v <VARIANT>  -b <VERSIONNUMBER> -n <BUILDNUMBER>"
+    echo "\tUse: ./build-android.sh -t <BUILD_TYPE> -v <VARIANT>  -b <VERSIONNUMBER> -n <BUILDNUMBER>"
     echo "\t"
     echo "\tWhere,"
     echo "\t"
