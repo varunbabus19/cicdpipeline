@@ -23,6 +23,7 @@ jobs:
       - uses: subosito/flutter-action@v1
         with:
           flutter-version: '2.2.0'
+      - run: chmod +x ./.github/workflows/scripts/build-android.sh
       - run: ./.github/workflows/scripts/build-android.sh -t debug -v dev  -b 1.0.0 -n 123
       - name: Push to Releases
         uses: ncipollo/release-action@v1
