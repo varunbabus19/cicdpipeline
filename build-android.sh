@@ -84,5 +84,5 @@ echo "Generating Launcher Icons ..."
 
 echo "Building $BUILD_TYPE $BUILDOUTPUT for Flowbird $FLAVOR ..."
 #flutter build "$BUILDOUTPUT" --"$BUILD_TYPE" --flavor "$FLAVOR" -t "$MAIN_FILE" --build-name="$VERSIONNUMBER" --build-number="$BUILDNUMBER" --no-obfuscate $FLUTTER_ADDITIONAL_FLAGS
-flutter build "$BUILDOUTPUT" --"$BUILD_TYPE" --build-name="$VERSIONNUMBER" --build-number="$BUILDNUMBER" --no-obfuscate $FLUTTER_ADDITIONAL_FLAGS
+flutter build "$BUILDOUTPUT" --"$BUILD_TYPE" --build-name="$VERSIONNUMBER" --build-number="$BUILDNUMBER" --split-per-abi
 
